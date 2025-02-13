@@ -1,1 +1,2 @@
-var app = angular.module("Lakhan", []);
+var app = angular.module('app', ['authModule','catalogmodule']);
+

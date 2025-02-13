@@ -1,18 +1,18 @@
+<html>
 <head>
     <title>TFL Store - Product List</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="modules/app.js"></script>
-    <script src="controllers/products.controller.js"></script>
-    <script src="controllers/auth.controller.js"></script>
+    <script src="./modules/auth.module.js"></script>
+    <script src="./modules/catalog.module.js"></script>
+    <script src="./modules/app.js"></script>
+    <script src="./controllers/products.controller.js"></script>
+    <script src="./controllers/auth.controller.js"></script>
 </head>
-<body ng-app="Lakhan" ng-controller="AuthController">
-    <script>
-        if (!localStorage.getItem("loggedInUser")) {
-            window.location.href = "login.html"; 
-        }
-    </script>
+<body >   
+
+    <div ng-app="catalogmodule" ng-controller="ProductController">
     <h1>Product List</h1>
-    <div ng-controller="ProductController">
+    <div>
         <table border="1" cellpadding="10">
             <thead>
                 <tr>
@@ -35,5 +35,13 @@
         </table>
     </div>
     <button ng-click="logout()" style="background: red; color: white; padding: 8px 15px; border: none; cursor: pointer;">Logout</button>
+</div>
+<div  ng-app="authModule" ng-controller="AuthController">
+    <script>
+        if (!localStorage.getItem("loggedInUser")) {
+            window.location.href = "login.html"; 
+        }
+    </script>
+    </div>
 </body>
 </html>

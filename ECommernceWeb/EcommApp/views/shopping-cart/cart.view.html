@@ -1,0 +1,9 @@
+<div>
+    <h2>Shopping Cart</h2>
+    <ul>
+        <li ng-repeat="item in vm.cart">
+            {{ item.name }} (₹{{ item.price }} x {{ item.quantity }})
+            <button ng-click="vm.removeFromCart(item)">Remove</button>
+        </li>
+    </ul>
+</div>

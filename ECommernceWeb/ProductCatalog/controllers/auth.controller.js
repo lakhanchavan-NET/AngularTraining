@@ -1,4 +1,4 @@
-app.controller("AuthController", function ($scope, $window) {
+authModule.controller("AuthController", function ($scope, $window) {
     if (!localStorage.getItem("loggedInUser")) {
         $window.location.href = "login.html";
     }

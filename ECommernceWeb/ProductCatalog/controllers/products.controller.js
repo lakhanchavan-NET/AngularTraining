@@ -1,4 +1,4 @@
-app.controller("ProductController", function ($scope) {
+catalogModule.controller("ProductController", function ($scope) {
     $scope.products = [
         { name: "Monitor", price: 15000, image: "monitor.JPG", description: "High definition Monitor" },
         { name: "Keyboard", price: 2000, image: "keyboard.JPG", description: "Keyboard" },
