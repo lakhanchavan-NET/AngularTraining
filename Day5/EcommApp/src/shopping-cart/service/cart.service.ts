@@ -18,6 +18,6 @@ class CartService {
     }
   }
   
-  // Register as an AngularJS service
+  
   angular.module("ECommApp").service("CartService", CartService);
   

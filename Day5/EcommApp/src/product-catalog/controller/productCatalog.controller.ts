@@ -2,7 +2,7 @@ angular.module("ECommApp").controller("ProductCatalogController", [
     "$scope",
     "CartService",
     function ($scope, CartService) {
-      // Define product list
+    
       $scope.products = [
         { name: "Monitor", price: 15000, image: "monitor.jpg", description: "High definition Monitor" },
         { name: "Keyboard", price: 2000, image: "keyboard.jpg", description: "Mechanical Keyboard" },
@@ -12,7 +12,7 @@ angular.module("ECommApp").controller("ProductCatalogController", [
         { name: "Smartphone", price: 30000, image: "smartphone.jpg", description: "Latest Android Smartphone" }
       ];
   
-      // Function to add product to cart
+    
       $scope.addToCart = function (product) {
         CartService.addItem(product);
         alert(product.name + " added to cart!");
