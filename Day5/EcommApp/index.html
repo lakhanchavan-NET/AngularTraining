@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECommerce App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+    <!-- App Module -->
+    <script src="dist/app.module.js"></script>
+
+    <!-- Services -->
+    <script src="dist/shopping-cart/service/cart.service.js"></script>
+
+    <!-- Controllers -->
+    <script src="dist/auth/controller/auth.controller.js"></script>
+    <script src="dist/product-catalog/controller/productCatalog.controller.js"></script>
+    <script src="dist/shopping-cart/controller/shoppingCart.controller.js"></script>
+</head>
+<body ng-app="ECommApp">
+    <ng-view></ng-view>
+</body>
+</html>

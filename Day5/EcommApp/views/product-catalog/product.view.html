@@ -1,0 +1,13 @@
+<div class="product-list">
+    <h2>Product Catalog</h2>
+    <ul>
+        <li ng-repeat="product in products">
+            <img ng-src="assets/{{ product.image }}" alt="{{ product.name }}" width="100">
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+            <p>Price: ₹{{ product.price }}</p>
+            <button ng-click="addToCart(product)">Add to Cart</button>
+        </li>
+    </ul>
+    <a href="#!/cart">Go to Cart</a>
+</div>
