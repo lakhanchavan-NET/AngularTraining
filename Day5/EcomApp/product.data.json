@@ -1,0 +1,58 @@
+[
+    {
+        "id": "01",
+        "name": "Monitor",
+        "price": 15000,
+        "imgSrc": "assets/images/monitor.jpg",
+        "description": "High definition Monitor"
+    },
+    {
+        "id": "02",
+        "name": "Keyboard",
+        "price": 2000,
+        "imgSrc": "assets/images/keyboard.jpg",
+        "description": "Mechanical Keyboard"
+    },
+    {
+        "id": "03",
+        "name": "Laptop",
+        "price": 50000,
+        "imgSrc": "assets/images/laptop.jpg",
+        "description": "High performance Laptop"
+    },
+    {
+        "id": "04",
+        "name": "Mouse",
+        "price": 1500,
+        "imgSrc": "assets/images/mouse.jpg",
+        "description": "Wireless Optical Mouse"
+    },
+    {
+        "id": "05",
+        "name": "Headphones",
+        "price": 3500,
+        "imgSrc": "assets/images/headphones.JPG",
+        "description": "Noise Cancelling Headphones"
+    },
+    {
+        "id": "06",
+        "name": "Smartphone",
+        "price": 30000,
+        "imgSrc": "assets/images/smartphone.jpg",
+        "description": "Latest Android Smartphone"
+    },
+    {
+        "id": "07",
+        "name": "Speakers",
+        "price": 500,
+        "imgSrc": "assets/images/speakers.JPG",
+        "description": "Speakers"
+    },
+    {
+        "id": "08",
+        "name": "Camera",
+        "price": 30000,
+        "imgSrc": "assets/images/camera.JPG",
+        "description": "Latest Camera"
+    }
+]

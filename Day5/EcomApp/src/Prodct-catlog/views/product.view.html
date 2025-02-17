@@ -1,0 +1,40 @@
+<div class="product-container">
+    <br>
+    <br>
+    <h2 class="text-center my-4">Product Catalog</h2>
+
+    <div class="row product-grid">
+        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 mb-4" ng-repeat="product in vm.products">
+            <div class="product-card card h-100 shadow-sm rounded">
+                <div class="image-container" style="height: 200px; overflow: hidden;">
+                    <img class="product-image card-img-top" ng-src="{{ product.imgSrc }}" alt="{{ product.name }}"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <div class="product-card-body card-body d-flex flex-column">
+                    <h5 class="product-title card-title font-weight-bold text-primary">{{ product.name }}</h5>
+                    <p class="product-price card-text text-muted">Price: ₹{{ product.price }}</p>
+
+                    <div class="product-quantity-control d-flex justify-content-between align-items-center mt-2">
+                        <button class="btn btn-sm btn-secondary product-quantity-btn"
+                            ng-click="vm.updateDisplayedQuantity(product, -1)">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <span class="product-quantity">{{ vm.selectedQuantities[product.id] || 0 }}</span>
+                        <button class="btn btn-sm btn-primary product-quantity-btn"
+                            ng-click="vm.updateDisplayedQuantity(product, 1)">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="mt-3 flex-grow-1">
+                        <button class="product-btn-add btn btn-lg btn-warning btn-block rounded-pill"
+                            ng-click="vm.addToCart(product)">
+                             Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
